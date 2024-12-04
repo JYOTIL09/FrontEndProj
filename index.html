@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Cryptocurrency Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Cryptocurrency Tracker</h1>
+    <p>Track and compare cryptocurrency prices in real-time.</p>
+  </header>
+  <main>
+
+    <section id="preferences">
+      <h2>User Preferences</h2>
+      <div>
+        <div style="display: flex;gap:5px;align-items: center;">
+          <label for="theme-select">Dark Theme:</label>
+          <label class="switch">
+            <input type="checkbox" id="theme-select" checked>
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div>
+          <br>
+          <label for="sort-option">Sort By:</label>
+          <select id="sort-option" style="cursor: pointer;">
+            <option value="market-cap">Market Cap</option>
+            <option value="price">Price</option>
+            <option value="name">Name</option>
+          </select>
+          <br>
+        </div>
+      </div>
+      <button id="save-preferences">Apply</button>
+    </section>
+
+    <section id="crypto-list">
+      <h2>Cryptocurrency Listing</h2>
+      <div id="cryptocurrencies"></div>
+    </section>
+    <section id="comparison">
+      <h2>Compare Cryptocurrencies</h2>
+      <div id="comparison-list"></div>
+    </section>
+
+
+
+  </main>
+  <footer>
+    <p>&copy; 2024 Cryptocurrency Tracker</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

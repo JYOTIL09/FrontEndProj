@@ -20,12 +20,13 @@ function showLoading(){
 function hideLoading(){
     _loader.style.display = "none"
 }
-// setInterval(
-//     ()=>{
-//         fetchCryptocurrencies();
-//         renderComparison();
-//     },60000
-// )
+
+setInterval(
+    ()=>{
+        fetchCryptocurrencies();
+        renderComparison();
+    },60000
+)
 
 async function fetchCryptocurrencies() {
     try {
